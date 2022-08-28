@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form Using Flex</title>
+    <!-- Font Awesome CDN Link -->
+    <script
+      src="https://kit.fontawesome.com/4513fb8493.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .login-container {
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-form {
+        width: 40%;
+        border: 1px solid coral;
+        border-radius: 20px;
+        background-color: lightgreen;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px 40px;
+        text-align: center;
+      }
+      .login-form input {
+        margin-top: 1em;
+        font-size: 1.15em;
+        padding: 7px 15px;
+        border: 1px solid coral;
+        border-radius: 10px;
+      }
+      .login-form input[type="submit"] {
+        background-color: coral;
+        color: white;
+        border: none;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: thistle;
+        padding: 20px 30px;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+        padding: 10px;
+      }
+      nav a:hover {
+        color: royalblue;
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="">Home</a>
+          <a href="">Gallery</a>
+          <a href="">Dashboard</a>
+          <a href="">Blog</a>
+        </div>
+        <div>
+          <a href="#"><i class="fa-solid fa-user">User</i></a>
+          <a href="#"
+            ><i class="fa-solid fa-arrow-right-to-bracket">Log Out</i></a
+          >
+        </div>
+      </nav>
+    </header>
+    <section class="login-container">
+      <form class="login-form">
+        <h1>Please Log in</h1>
+        <input type="email" name="email" id="" placeholder="Enter Your Email" />
+        <input
+          type="password"
+          name="password"
+          id=""
+          placeholder="Enter Your Password"
+        />
+        <input type="submit" value="Log in" />
+      </form>
+    </section>
+  </body>
+</html>
